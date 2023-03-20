@@ -146,35 +146,7 @@ private JTextArea meassageArea = new JTextArea();
     
         }
     
-        /*public void startWriting(){
-            // thread- send data to the client
-            //lambda expression
-            System.out.println("writer started");
-            Runnable r2=()->{
-              try{
-                while(!socket.isClosed()){
-                    
-                    BufferedReader br2= new BufferedReader(new InputStreamReader(System.in));
-                    String content = br2.readLine();
-                    out.println(content);
-                    out.flush();
-
-                    if(content.equals("over")){
-                        socket.close();
-                        break;
-                    }
-                    //System.out.println("connection closed");
-                }
-                
-                
-            }
-            catch(Exception e){
-               // e.printStackTrace();
-               System.out.println("connection closed");
-            }
-            };
-            new Thread(r2).start();
-        }*/
+        
     
     public static void main(String args[]){
         System.out.println("hello-- client");
